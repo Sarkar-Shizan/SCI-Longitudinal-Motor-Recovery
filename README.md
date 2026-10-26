@@ -58,4 +58,3 @@ This repository **does not include raw/processed Sygen patient data, PTID lists,
 
 **Manuscript title:** *Explainable Landmark-Based Prediction of Motor Outcomes After Traumatic Spinal Cord Injury Using Longitudinal Neurological Assessments*.
 
-Authors, DOI, publication venue, ethics information, code license and release date should be completed by the author using verified information before public release. This repository is an associated research artifact and is not evidence of clinical validation.
