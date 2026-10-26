@@ -1,0 +1,21 @@
+name: sci-recovery-ml
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13.15
+  - pip
+  - pip:
+      - numpy==2.1.3
+      - pandas==2.3.3
+      - scipy==1.16.3
+      - scikit-learn==1.6.1
+      - lightgbm==4.6.0
+      - xgboost==3.4.1
+      - optuna==5.0.0
+      - shap==0.52.0
+      - matplotlib==3.10.0
+      - seaborn==0.13.2
+      - openpyxl==3.1.5
+      - joblib==1.6.0
+      - imbalanced-learn==0.14.2
+      - statsmodels==0.15.0

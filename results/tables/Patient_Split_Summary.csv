@@ -1,0 +1,5 @@
+Split,N,Percent
+Train,461,69.95
+Validation,99,15.02
+Internal Test,99,15.02
+Total,659,100.0

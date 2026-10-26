@@ -1,0 +1,8 @@
+Evaluation_Type,Analysis_Role,Model,Landmark,Algorithm,N_Evaluation,N_Training_Partition,N_Outer_Folds,MAE,RMSE,R2,MAE_SD,RMSE_SD,R2_SD,Source,Interpretation_Note
+Validation,Landmark comparison,Model_A,Baseline,LightGBM,99.0,,,14.079882109510665,19.128812187778,0.6238044850750597,,,,verified_results_df,Landmark validation comparison.
+Validation,Landmark comparison,Model_B4,Week 4,LightGBM,99.0,,,9.976437250569434,14.586489278566674,0.7812544829197592,,,,verified_results_df,Landmark validation comparison.
+Validation,Landmark comparison,Model_B8,Week 8,LightGBM,99.0,,,6.439833104921705,9.973308045961955,0.8977375781365348,,,,verified_results_df,Landmark validation comparison.
+Validation,Landmark comparison,Model_B16,Week 16,LightGBM,99.0,,,4.845042261646481,7.9568100988257155,0.9349098018870162,,,,verified_results_df,Landmark validation comparison.
+Validation,Optimized final model,Optimized LightGBM,Week 16,Optimized LightGBM,,,,4.5140584957588175,7.81060429656915,0.9372798802044037,,,,validation_result,Optimized-model validation result.
+Internal test,Optimized final model evaluation,Optimized LightGBM,Week 16,Optimized LightGBM,,,,5.542201350663329,10.304731835675012,0.8800222180826135,,,,test_result,Internal test; historical test independence UNKNOWN.
+Nested cross-validation,Internal resampling estimate,Model_B16,Week 16,LightGBM,,461.0,5.0,4.779340081445236,7.591211897315256,0.9255587383440872,0.8609442635605199,1.541698863607065,0.02466160780928934,in-memory nested CV summary,Nested-CV estimate; not the internal-test result.

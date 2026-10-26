@@ -1,0 +1,12 @@
+Metric,Value
+Calibration patients,99.0
+Test patients,99.0
+Nominal coverage,0.95
+Observed test coverage,0.9090909090909091
+Observed coverage CI lower,0.8344310242579882
+Observed coverage CI upper,0.9575835298814437
+Patients covered,90.0
+Patients not covered,9.0
+Mean interval width,28.984643966110323
+Median interval width,28.984643966110326
+Conformal residual quantile,14.492321983055163

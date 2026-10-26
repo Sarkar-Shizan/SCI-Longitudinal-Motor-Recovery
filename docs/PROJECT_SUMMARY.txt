@@ -1,0 +1,62 @@
+
+
+SCI Dynamic Recovery Prediction Project
+=======================================
+
+
+Objective:
+Development of an explainable ML framework for
+predicting 26-week motor recovery after SCI.
+
+
+Final Model:
+LightGBM Regression
+
+
+Validation Framework:
+
+- Nested cross-validation
+- Repeated validation
+- Calibration assessment
+- Learning curve analysis
+- Bootstrap confidence intervals
+
+
+Explainability:
+
+- SHAP analysis
+- Permutation importance
+
+
+Uncertainty:
+
+- Conformal prediction intervals
+
+
+Data Integrity:
+
+- PTID-based patient-level split verification
+- Zero overlap between train, validation and test
+
+
+Robustness:
+
+- Missing Week-16 sensitivity analysis
+- Imputation sensitivity analysis
+
+
+Reproducibility:
+
+- README
+- Requirements
+- Environment file
+- Model card
+- Exported model artifacts
+
+
+Limitation:
+
+External validation on an independent cohort
+remains necessary.
+
+
