@@ -1,4 +1,4 @@
 Metric,Mean,SD,N_Outer_Folds,Validation_Type,Landmark
-MAE,4.779340081445236,0.8609442635605199,5,"Nested 5-fold CV, training partition",Model_B16
-RMSE,7.591211897315256,1.541698863607065,5,"Nested 5-fold CV, training partition",Model_B16
-R2,0.9255587383440872,0.02466160780928934,5,"Nested 5-fold CV, training partition",Model_B16
+MAE,4.786556874189105,0.9163540350068476,5,"Nested 5-fold CV, training partition",Model_B16
+RMSE,7.761344607421466,1.8229023608583013,5,"Nested 5-fold CV, training partition",Model_B16
+R2,0.9219379774201297,0.028894114958364005,5,"Nested 5-fold CV, training partition",Model_B16

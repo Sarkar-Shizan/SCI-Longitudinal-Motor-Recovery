@@ -1,0 +1,9 @@
+{
+  "patient_split": "Verified using PTID",
+  "data_provenance": "Verified",
+  "cohort_derivation": "Verified",
+  "missingness_analysis": "Completed",
+  "learning_curve": "Completed",
+  "model_card": "Updated",
+  "external_validation": "Not performed"
+}

@@ -1,4 +1,6 @@
 cff-version: 1.2.0
-message: "If you use these materials, please cite the related manuscript once its bibliographic details are available."
-title: "Explainable Landmark-Based Prediction of Motor Outcomes After Traumatic Spinal Cord Injury Using Longitudinal Neurological Assessments"
+message: "If you use this research repository, cite the associated manuscript when available."
+title: "Explainable Landmark-Based Prediction of Motor Outcomes After Traumatic Spinal Cord Injury"
 type: software
+abstract: "Research code and aggregate analysis artifacts for longitudinal prediction of nominal Week-26 motor outcomes following spinal cord injury."
+# Add authors, DOI, release date, and repository URL before publication.

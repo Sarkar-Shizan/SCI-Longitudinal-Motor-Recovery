@@ -1,0 +1,65 @@
+
+LANDMARK ABLATION ANALYSIS — VALIDATION RESULTS
+================================================
+
+Algorithm:
+LightGBM with the same estimator configuration
+across the four prediction landmarks.
+
+Study population:
+Training patients = 461
+Validation patients = 99
+
+BASELINE MODEL (Model_A)
+MAE  = 13.4364
+RMSE = 18.3632
+R2   = 0.6533
+
+NOMINAL WEEK-16 MODEL (Model_B16)
+MAE  = 4.5567
+RMSE = 7.6190
+R2   = 0.9403
+
+BASELINE TO WEEK-16 CHANGE
+MAE reduction  = 66.09%
+RMSE reduction = 58.51%
+Absolute R2 gain = 0.2870
+
+BEST VALIDATION LANDMARK BY MAE
+Model_B16
+
+INTERPRETATION
+The nominal Week-16 landmark achieved the lowest MAE and RMSE and the highest R2 among the four evaluated landmarks.
+
+MAE decreased at every successive nominal landmark.
+
+The analysis suggests that information from
+successive nominal neurological assessments
+may improve prediction of motor recovery
+at the nominal Week-26 study visit.
+
+The comparisons are observational predictive
+analyses, not evidence of causality.
+
+BOOTSTRAP UNCERTAINTY
+Four matched-patient MAE comparisons were
+evaluated using paired bootstrap resampling.
+
+Positive MAE improvement favors the later
+assessment landmark.
+
+The confidence intervals are exploratory,
+not adjusted for multiple comparisons,
+and do not account for the full uncertainty
+arising from model or landmark selection.
+
+LIMITATIONS
+1. All results are based on internal validation.
+2. Patient alignment must be preserved across
+   prediction landmarks.
+3. Bootstrap intervals are exploratory.
+4. There is no external validation in this analysis.
+5. Week-16 prediction must not be described
+   as baseline-only prediction.
+6. The visit labels describe nominal study
+   assessments, not verified individual dates.

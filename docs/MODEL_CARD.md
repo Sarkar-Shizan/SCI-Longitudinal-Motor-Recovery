@@ -14,7 +14,7 @@
 
 **Framework:** LightGBM
 
-**Documentation date:** 2026-10-17
+**Documentation date:** 2026-10-28
 
 ---
 
@@ -280,7 +280,7 @@ autonomous clinical decision-making.
 
 Python version: 3.13.15
 
-Platform: Linux-6.18.48+-x86_64-with-glibc2.39
+Platform: Linux-6.18.55+-x86_64-with-glibc2.39
 
 Environment files:
 

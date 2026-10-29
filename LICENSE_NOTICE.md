@@ -1,3 +1,3 @@
-# License status
+# License and data-use notice
 
-No license has been selected on behalf of the author. Until a license is explicitly chosen, this repository does not grant general rights to reuse its original code or documentation. The upstream Sygen dataset and other third-party materials are governed by their own terms. A repository license must not be interpreted as a license to redistribute source patient-level data.
+No open-source software or data license is asserted for the Sygen dataset or third-party source materials. Verify rights for the dataset, source code, dependencies, and exported figures/tables before public release. This repository excludes patient-level records and serialized model artifacts. Until licensing is confirmed, treat the repository as research material with all rights reserved.

@@ -1,0 +1,2 @@
+Comparison,Cohort,Patients,Delta_R2,Delta_RMSE,Delta_MAE,RMSE_Reduction_Percent,MAE_Reduction_Percent
+Dynamic B16 vs AIS-only,Test,99,0.40954940067633117,-11.32106513503561,-12.764341758903381,52.24439352700338,69.35052087206647

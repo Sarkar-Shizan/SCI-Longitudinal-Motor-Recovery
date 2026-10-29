@@ -1,0 +1,8 @@
+Metric,Value
+Mean R2,0.9269560618364858
+Standard Deviation,0.0450359957052556
+Lower 2.5th Percentile,0.7961302697827238
+Upper 97.5th Percentile,0.9711084958430024
+Minimum R2,0.7642605367722735
+Maximum R2,0.981984656713574
+Number of Evaluations,50.0

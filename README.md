@@ -1,60 +1,53 @@
 # Explainable Landmark-Based Prediction of Motor Outcomes After Traumatic Spinal Cord Injury
 
-**Research code and aggregate analysis artifacts** for retrospective landmark-based prediction of nominal Week-26 total motor score in the Sygen SCI cohort.
+Research code and aggregate analysis artifacts for retrospective prediction of nominal Week-26 total motor score in the Sygen spinal cord injury cohort.
 
-> **Research use only.** This repository is not a clinical decision-support system. It does not establish prospective usefulness, external validation, or confirmed independent test-set generalization.
+**Research use only.** This project is not a clinical decision-support system. It does not establish prospective usefulness, external validation, or confirmed independent test-set generalization.
 
 ## Study overview
 
-From 791 source records, 659 patients had an observed nominal Week-26 total motor score. The patient-disjoint partition used 461 training, 99 validation, and 99 internal-test patients. Four cumulative predictor sets were evaluated: baseline, nominal Week 4, Week 8, and Week 16.
+The project evaluates longitudinal clinical prediction at baseline and Weeks 4, 8, and 16, with Week-26 total motor score as the target. The final reported model is an optimized LightGBM regressor using information available through Week 16. The project includes nested and repeated cross-validation summaries, landmark comparisons, bootstrap analyses, calibration/error analyses, and SHAP-based explainability artifacts.
 
-In the principal matched validation comparison, MAE decreased from 14.08 at baseline to 9.98, 6.44, and 4.85 at subsequent landmarks. A separately optimized B16 LightGBM estimator achieved internal-test MAE 5.54, RMSE 10.30, and R² 0.880. These are **distinct fitted evaluation procedures**; estimates should not be pooled or presented as independent repeated evaluations. Later landmarks both introduced neurological information and shortened the remaining prediction horizon.
+The supplied project documentation reports 659 analytical patients, split into 461 training, 99 validation, and 99 internal-test patients. Reported internal-test performance is MAE 5.54, RMSE 10.30, and R² 0.880. These are historical project results; this repository packaging step does not independently retrain the model or re-verify these metrics.
 
-## Contents
+## Repository layout
 
 ```text
-notebooks/
-  01_SCI_Recovery_Full_Analysis.ipynb
-  02_Archived_Model_Inference_Reproduction.ipynb
-data/README.md
-results/tables/
-results/figures/
-reproducibility/
-docs/
-requirements.txt
-environment.yml
-.gitignore
+SCI-Longitudinal-Motor-Recovery-Updated/
+├── data/README.md
+├── docs/
+│   ├── MODEL_CARD.md
+│   └── PROJECT_SUMMARY.txt
+├── notebooks/01_SCI_Recovery_Full_Analysis.ipynb
+├── reproducibility/
+│   ├── FINAL_STATUS.json
+│   └── README.md
+├── results/
+│   ├── figures/       # aggregate figures
+│   └── tables/        # aggregate tables and reporting artifacts
+├── CITATION.cff
+├── LICENSE_NOTICE.md
+├── environment.yml
+├── requirements.txt
+└── README.md
 ```
 
-The main notebook is an **archived research notebook**, not a guaranteed portable one-command pipeline. It was written for the researcher's original Kaggle and project directory layout. Source code is retained, but cached outputs and execution history were cleared before release. The second notebook checks archived-model inference and requires inputs that are intentionally not bundled.
+## Reproducibility
 
-## Setup (inspection / authorized reproduction)
+The notebook is provided as research code, not as a guaranteed one-command pipeline. The notebook's saved cell outputs were cleared before packaging. Running it may require an authorized copy of the dataset, changes to local file paths, and a compatible environment. See `requirements.txt` and `environment.yml`.
 
-Using Python 3.13 and a virtual environment:
+The repository preserves aggregate results and documentation but deliberately excludes raw and derived patient-level datasets, individual prediction exports, frozen test arrays, patient-level identifiers, and serialized model files. This is a repository-safety choice, not a claim that every upstream artifact is non-sensitive.
 
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-jupyter lab
-```
+## Interpretation and limitations
 
-You may need to install Jupyter separately (`pip install jupyterlab`) and update original Kaggle paths before executing notebook cells. **Do not run the main notebook without reviewing its file operations and required paths.** The data necessary for model rebuilding are not included; see [`data/README.md`](data/README.md).
+- The target is nominal Week-26 total motor score; the final dynamic predictor set uses information through Week 16.
+- Internal test performance, nested cross-validation, repeated cross-validation, and matched landmark validation are different evaluation procedures and must not be pooled or substituted for one another.
+- Later landmarks provide more recent neurological information and shorten the remaining prediction horizon; landmark comparisons do not alone isolate the incremental value of longitudinal information.
+- The independence of the internal test set from all historical model-selection decisions is not established by partition separation alone.
+- External and prospective validation have not been performed.
+- SHAP and feature-importance analyses describe model associations, not causal effects.
+- The model is not validated for autonomous clinical decision-making.
 
-## Research outputs
+## How to cite
 
-- `results/tables/`: selected **aggregate** cohort summaries, landmark comparisons, CV summaries, and uncertainty summaries.
-- `results/figures/`: selected population-level figures, benchmark comparisons, and model diagnostics. Individual patient-level explanation figures and patient-specific output tables are excluded.
-- `reproducibility/archived_inference_audit_summary.json`: report of stored-model inference reproduction; not a complete retraining audit.
-- `docs/MODEL_CARD.md`: archived model notes; review in conjunction with `docs/RESEARCH_LIMITATIONS.md`.
-
-The notebooks and aggregate outputs have not been independently rerun in this publication package. For the full methodological limitations see [`docs/RESEARCH_LIMITATIONS.md`](docs/RESEARCH_LIMITATIONS.md).
-
-## Data sharing and privacy
-
-This repository **does not include raw/processed Sygen patient data, PTID lists, frozen test arrays, original predictions or saved model pickles**. Consult the source *SCI Neurological Recovery* repository and responsible data custodians about access terms. We have not verified permission to redistribute clinical patient-level records.
-
-## Manuscript / citation
-
-**Manuscript title:** *Explainable Landmark-Based Prediction of Motor Outcomes After Traumatic Spinal Cord Injury Using Longitudinal Neurological Assessments*.
-
+See `CITATION.cff` for repository citation metadata. Update author and repository URL fields before publishing to GitHub.

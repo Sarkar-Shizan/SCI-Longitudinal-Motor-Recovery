@@ -1,35 +1,23 @@
-# Data: do not publish participant-level or source data
-/data/*
-!/data/README.md
-*.csv
-!results/tables/*.csv
-*.xlsx
-*.xls
-*.sav
-*.dta
-*.parquet
-*.feather
-*.npy
-*.npz
-*.pkl
-*.pickle
-*.joblib
-*.tiff
-*.tif
-*.h5
-*.hdf5
-*ptid*
-*PTID*
-*patient_ids*
-*individual_predictions*
-*frozen_X*
-*frozen_y*
-.ipynb_checkpoints/
+# Python
 __pycache__/
-*.pyc
-.env
-.env.*
-!.env.example
+*.py[cod]
+.ipynb_checkpoints/
 .venv/
 venv/
+
+# Local data and restricted artifacts
+data/raw/
+data/processed/
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.joblib
+*.pt
+*.pth
+*.csv.tmp
+
+# Local outputs / secrets
+.env
 .DS_Store
+Thumbs.db

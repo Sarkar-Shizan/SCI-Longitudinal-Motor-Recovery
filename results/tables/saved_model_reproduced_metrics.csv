@@ -1,0 +1,4 @@
+Metric,Recomputed_From_Model,Recomputed_From_Original_CSV,Previously_Reported,Model_vs_CSV_Abs_Difference,Difference_vs_Reported,Recomputed_Metrics_Consistent,Previously_Reported_Matches
+MAE,5.641203864106784,5.641203864106784,5.5422,0.0,0.09900386410678408,True,False
+RMSE,10.348370321582582,10.348370321582582,10.3047,0.0,0.04367032158258155,True,False
+R2,0.8790039024595275,0.8790039024595275,0.88,0.0,0.0009960975404724737,True,False

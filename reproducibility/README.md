@@ -1,7 +1,7 @@
-# Reproducibility scope
+# Reproducibility notes
 
-The `02_Archived_Model_Inference_Reproduction.ipynb` notebook preserves the source used to check a saved model. Its cell outputs have been cleared. The original reproduction inputs, including a frozen test feature matrix, observed outcomes and model pickles, are **not redistributed** here.
+The aggregate files in `results/` are exported project artifacts. This repository packaging step does not rerun training, regenerate predictions, or independently verify historical metrics.
 
-`archived_inference_audit_summary.json` records previously reported saved-model inference checks. These do not constitute independent reproduction of the entire model-training process; the submitted record indicates `model_retrained: false` and researcher confirmation of session independence was outstanding.
+The source project records saved-model inference reproduction on a previously defined 99-patient internal test cohort, but this public repository intentionally omits frozen patient-level arrays, individual predictions, and the serialized model. The inference audit therefore cannot be independently rerun from this public package alone.
 
-No external validation is included.
+Before publication, verify the complete training pipeline in a clean environment, document all random seeds and data versions, and establish whether the internal test outcomes were inspected during model development. External validation remains necessary.

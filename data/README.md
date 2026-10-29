@@ -1,7 +1,7 @@
 # Dataset access and permissions
 
-This public repository deliberately **does not distribute** the original Sygen clinical dataset (`spss_v1_2.csv`), derived patient-level records, patient identifiers, patient split lists, frozen evaluation arrays, or individual prediction tables.
+This public repository does not include the original Sygen clinical dataset, derived patient-level records, patient identifiers, patient split lists, frozen evaluation arrays, individual prediction tables, or serialized trained models.
 
-The research used Sygen data accessed through the *SCI Neurological Recovery* repository, as described and cited in the manuscript. Consult the original source and the responsible data custodians for the actual access and redistribution terms before acquiring or sharing any patient-level data. This repository does **not** grant access or permission to redistribute source data.
+The research used the Sygen Spinal Cord Injury Dataset. Consult the original data source and responsible custodians for access and redistribution terms. Do not commit restricted or patient-level data to this repository. Place authorized local data outside version control and update notebook paths locally.
 
-For local analysis only, keep authorized data outside version control. The main notebook was originally created for a Kaggle/working-directory environment and may require paths and setup adjustments; it is not guaranteed to run end to end without the original project workspace and data.
+The analysis notebook has its saved outputs cleared to reduce accidental disclosure of row-level data. Its code may still require adaptation to the original research workspace and data paths.
